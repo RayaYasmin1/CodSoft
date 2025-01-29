@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raya Yasmin - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #1c3f38;
+        }
+
+        nav a {
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #a6d1c9;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1c3f38;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Section Titles */
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* About Section */
+        #about img {
+            border-radius: 50%;
+            border: 5px solid #a6d1c9;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skills-list li {
+            background-color: #a649af;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .skills-list li:hover {
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        .carousel-inner img {
+            height: 400px;
+         
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Resume Section */
+        .btn-custom {
+            background-color: #1c3f38;
+            color: white;
+            padding: 5px 10px;
+            font-size: 1rem;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #a6d1c9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c3f38;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #a6d1c9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Raya Yasmin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Raya Yasmin</h1>
+        <p>Passionate Software Engineer | Data Analysis Enthusiast</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <img src="pro.png" alt="Raya Yasmin" class="img-fluid" width="200">
+                
+                    <p>Hi, I'm Raya Yasmin, a passionate Software Engineer with a focus on Data Analysis and Software Development. I am currently pursuing MSc in Software Engineering with Advanced Research from Hertfordshire University. My expertise spans across programming languages like C++, Java, Real-time programming, and GUI programming. I am working on a project that develops an Automated Code Style Checker for Student Projects, aiming to enhance code style enforcement in programming assignments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Data Analysis</li>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Real-time Programming</li>
+                <li>GUI Programming</li>
+                <li>C++</li>
+                <li>Object Oriented Programming</li>
+                <li>Version Control</li>
+                <li>Java Programming</li>
+                <li>Software Engineering</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container text-center">
+            <h2>Projects</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="research.jpg" class="text-center w-10" alt="Hotel Data Analysis">
+                        <div class="carousel-caption">
+                            <h5>Hotel Data Analysis in Bangalore</h5>
+                            <p>A research  to uncover insights on pricing, ratings, and location-based factors.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="hjss.jpeg" class="text-center w-10 " alt="JavaScript Journey">
+                        <div class="carousel-caption">
+                            <h5>Hertfordshire Swiming Management System</h5>
+                            <p>A java based Software helpful for booking, scheduling and tracking the progress of students .</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="admit.jpeg" class=" text-center w-10 " alt="JavaScript Journey">
+                       
+                        <div class="carousel-caption">
+                            <h5>LUAAS-Admit Card Automation System</h5>
+                            <p>A web application to ease the process of examination.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="javascript.jpeg" class="text-center w-10" alt="JavaScript Journey">
+                        <div class="carousel-caption">
+                            <h5>JavaScript Journey</h5>
+                            <p>A web-based portfolio to track my learning progress in JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Resume</h2>
+            <a href="resume.pdf" class="btn btn-custom" download="Raya_Yasmin_Resume.pdf">Download my Resume</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Raya Yasmin. All rights reserved. | <a href="mailto:rayayasmin111@gmail.com">Contact Me</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
